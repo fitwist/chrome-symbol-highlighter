@@ -1,0 +1,19 @@
+{
+	"name": "highlight-symbols",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepack:crx": "pnpm build",
+		"pack:crx": "crx3 dist -o extension/$npm_package_name@$npm_package_version.crx"
+	},
+	"devDependencies": {
+		"@crxjs/vite-plugin": "2.0.0-beta.19",
+		"crx3": "^1.1.3",
+		"eslint": "^8.52.0",
+		"vite": "^4.5.0"
+	}
+}
